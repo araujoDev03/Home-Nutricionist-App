@@ -1,0 +1,73 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  padding-bottom: env(safe-area-inset-bottom); /* para iPhones com notch */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Cada botão ocupa o mesmo espaço */
+.footer div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo base dos botões */
+.footer button {
+  background: none;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Hover para desktop */
+.footer button:hover {
+  background-color: white;
+}
+
+/* Botão central (ex: adicionar) */
+.buttom-add button {
+  background-color: #4caf50;
+  color: white;
+  width: 52px;
+  height: 52px;
+  font-size: 28px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: -12px;
+  padding-top: 5px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  .footer button {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+  }
+
+  .buttom-add button {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    top: -10px;
+  }
+  .buttom-add button:hover {
+  background-color: #4caf50;
+  }
+}

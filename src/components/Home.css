@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 33px;
+  height: 37px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  
+}
+
+.logo-line1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.logo-line2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  
+}
+
+.circle-button {
+  display: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  .header {
+    padding: 12px 16px;
+    box-shadow: none;
+  }
+
+  .logo {
+    width: 30px;
+    height: 33px;;
+  }
+
+  .logo-line1,
+  .logo-line2 {
+    font-size: 14px;
+  }
+}
